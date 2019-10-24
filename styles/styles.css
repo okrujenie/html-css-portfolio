@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400,700&display=swap');
 
-/* *{
-    margin: 0;
-    padding: 0;
-} */
-    
 body{
     font-family: 'Montserrat', sans-serif;
 }
@@ -19,9 +14,6 @@ body{
     background-image: url(../img/slider-img.jpg);
     position: relative;
 }
-
-/*.header{
-}*/
 
 .logo{
     float: left;
@@ -61,6 +53,21 @@ color: #212121;
 font-weight: 700;
 /* letter-spacing: 1.4px; */
 border-bottom: 3px solid #212121;
+}
+
+.menu_link:focus{
+color: #212121;
+font-weight: 700;
+/* letter-spacing: 1.4px; */
+border-bottom: 3px solid #212121;
+outline: none;
+}
+
+.menu_link:active{
+color: #aa2121;
+font-weight: 700;
+/* letter-spacing: 1.4px; */
+border-bottom: 3px solid #aa2121;
 }
 
 /* .search{    
@@ -138,11 +145,29 @@ line-height: 24px; */
     text-transform: uppercase;
     letter-spacing: 3.6px;
     padding-top: 14px;
-    text-decoration: none;    
+    text-decoration: none; 
     /* width: 120px;
     height: 13px;
     line-height: 24px; */
     }
+
+.button_text:after{
+    content: "";
+    background: url(../img/arrow.svg);
+    width: 8px;
+    height: 12px;
+    display: inline-block;
+    opacity: 0;
+}
+
+.button_text:hover:after{
+    content: "";
+    background: url(../img/arrow.svg);
+    width: 8px;
+    height: 12px;
+    display: inline-block;
+    opacity: 1;
+}
 
 .pagination{
         position: absolute;        
@@ -154,17 +179,29 @@ line-height: 24px; */
         display: inline-block;
         width: 30px;
         height: 30px;
+        margin: 10px 10px;
         border-radius: 20px;
         background-color: #c7c7c7;
         margin: 5px;
     }
     
-.circle_active{
+.circle:hover{
         /* Style for "active" */
     width: 40px;
     height: 40px;
+    margin: 0;
     border-radius: 20px;
     background-color: #212121;
+    margin-bottom: 0px;
+    }
+
+.circle:active{
+        /* Style for "active" */
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    border-radius: 20px;
+    background-color: #aa2121;
     margin-bottom: 0px;
     }
 
@@ -172,7 +209,7 @@ line-height: 24px; */
     margin-left: 98px;
     margin-top: 120px;
     border-bottom: 1px solid #6c6c6c;
-    width: 310px;
+    width: 300px;
     height: 49px;
     box-sizing: border-box;
     display: inline-block;
@@ -182,8 +219,6 @@ line-height: 24px; */
     display: inline-block;
     box-sizing: border-box;
 }
-
-
 
 .tab_control_link{
     text-decoration: none;    
@@ -220,6 +255,16 @@ font-weight: 700;
     box-sizing: border-box;
 }
 
+.tab_control_link:active{
+    text-decoration: none;
+    color: #aa2121;
+font-size: 36px;
+font-weight: 700;
+    border-bottom: 3px solid #aa2121;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
 .btn_ghost{
     display: block;
     float: right;
@@ -229,10 +274,27 @@ font-weight: 700;
     color: #212121;
     font-size: 18px;
     font-weight: 700;
-    line-height: 24px;
     text-transform: uppercase;
     text-decoration: none;
-letter-spacing: 3.6px;
+    letter-spacing: 3.6px;
+}
+
+.btn_text:after{
+    content: "";
+    background: url(../img/arrow.svg);
+    width: 8px;
+    height: 12px;
+    display: inline-block;
+    opacity: 0;
+}
+
+.btn_text:hover:after{
+    content: "";
+    background: url(../img/arrow.svg);
+    width: 8px;
+    height: 12px;
+    display: inline-block;
+    opacity: 1;
 }
 
 .tab_content{
@@ -315,7 +377,7 @@ text-align: center;
 }
 
 .promo_product{    
-    padding-top: 120px;
+    margin-top: 120px;
     display: flex;
 }
 
@@ -324,8 +386,6 @@ text-align: center;
     width: 683px;
     height: 683px;
     position: relative;
-    padding-top: 228px;
-    padding-left: 51px;
 }
 
 .promo_content_2{
@@ -334,8 +394,6 @@ text-align: center;
     height: 683px;
     position: relative;
     position: relative;
-    padding-top: 228px;
-    padding-left: 51px;
 }
 
 .promo_content_p{
@@ -349,15 +407,18 @@ font-weight: 700;
 text-transform: uppercase;
 /* Text style for "exclusive" */
 letter-spacing: 1.8px;
+margin-top: 228px;
+margin-left: 51px;
 }
 
 .promo_content_h2{
     /* Style for "Fishnet Ch" */
-padding-top: 18px;
+margin-top: 18px;
 /* height: 28px; */
 color: #212121;
 font-size: 36px;
 font-weight: 700;
+margin-left: 51px;
 }
 
 .promo_content_text{
@@ -369,6 +430,7 @@ color: #6c6c6c;
 font-size: 14px;
 font-weight: 300;
 line-height: 24.04px;
+margin-left: 51px;
 }
 
 .promo_content_button{
@@ -381,6 +443,7 @@ border-radius: 23px;
 background-color: #ffffff;
 text-align:center;
 text-decoration: none;
+margin-left: 51px;
 }
 
 .promo_content_button:active{
@@ -399,8 +462,8 @@ text-decoration: none;
 .trending_tab_content{
     box-sizing: border-box;
     display: inline-block;
-    padding-left: 98px;
-    padding-top: 64px;
+    margin-left: 98px;
+    margin-top: 64px;
     position: relative;
 }
 
@@ -496,7 +559,25 @@ line-height: 24px; */
     line-height: 24px; */
     }
 
-.hot_deals_pagination{
+    .hot_deals_button_text:after{
+        content: "";
+        background: url(../img/arrow.svg);
+        width: 8px;
+        height: 12px;
+        display: inline-block;
+        opacity: 0;
+    }
+    
+    .hot_deals_button_text:hover:after{
+        content: "";
+        background: url(../img/arrow.svg);
+        width: 8px;
+        height: 12px;
+        display: inline-block;
+        opacity: 1;
+    }
+    
+    .hot_deals_pagination{
         position: absolute;        
         bottom: 20px;
         left: 623px;
@@ -805,9 +886,8 @@ letter-spacing: 0.6px;
     /* Style for "" */
     margin-left: 158px;
     margin-bottom: 30px;
-    width: 145px;
-color: #6c6c6c;
-font-family: icomoon;
+    color: #6c6c6c;
+font-family: 'icomoon';
 font-size: 28px;
 font-weight: 400;
 line-height: 26px;
