@@ -1,2 +1,2 @@
 # new-shop
-Задание от Geekbrains, шестое по счету курса HTML CSS
+Задание от Geekbrains, курс HTML CSS
